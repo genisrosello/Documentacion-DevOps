@@ -22,6 +22,8 @@ Este entorno será reproducido con imagenes publicas tanto de grafana como de pr
 
 ## 3	Procedimiento
 
+Prueba de git de obsidian.
+
 
 
 

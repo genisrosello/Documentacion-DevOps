@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -180,13 +179,23 @@
               "icon": "lucide-list",
               "title": "Outline of Welcome"
             }
+          },
+          {
+            "id": "70b5965f13a96518",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,15 +207,16 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "header-enhancer:Header Enhancer": false
+      "header-enhancer:Header Enhancer": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "aaed8fd5614af6b3",
   "lastOpenFiles": [
-    "Procedimientos/P_0002_Instalacion_Docker.md",
-    "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
-    "Untitled.md",
     "Procedimientos/P_0001_Documentar_Incidencia.md",
+    "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
+    "Procedimientos/P_0002_Instalacion_Docker.md",
+    "Untitled.md",
     "Incidencias/I_0001_incidencia_ejemplo.md",
     "Templetes/T.Procedimiento.md",
     "Templetes/T.Incidencia.md",

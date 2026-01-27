@@ -3,5 +3,6 @@
   "templater-obsidian",
   "obsidian-tagfolder",
   "obsidian-languagetool-plugin",
-  "header-enhancer"
+  "header-enhancer",
+  "obsidian-git"
 ]
