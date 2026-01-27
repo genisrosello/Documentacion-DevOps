@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6a01d4ab762f9494",
+        "id": "e0b80eacb743913f",
         "type": "tabs",
         "children": [
           {
-            "id": "343c51c3783cbeba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Procedimientos/P_0002_Instalacion_Docker.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "P_0002_Instalacion_Docker"
-            }
-          },
-          {
-            "id": "aaed8fd5614af6b3",
+            "id": "5adaa490b50c22d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "P_0003_Instalacion_Grafana+Prometheus_Docker"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of P_0003_Instalacion_Grafana+Prometheus_Docker"
             }
           },
           {
@@ -211,16 +196,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aaed8fd5614af6b3",
+  "active": "5adaa490b50c22d3",
   "lastOpenFiles": [
-    "Procedimientos/P_0001_Documentar_Incidencia.md",
+    "2026-01-27.md",
+    "Welcome.md",
     "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
+    "Procedimientos/P_0001_Documentar_Incidencia.md",
     "Procedimientos/P_0002_Instalacion_Docker.md",
     "Untitled.md",
     "Incidencias/I_0001_incidencia_ejemplo.md",
     "Templetes/T.Procedimiento.md",
     "Templetes/T.Incidencia.md",
-    "Welcome.md",
     "Incidencias",
     "Procedimientos",
     "Templetes"
