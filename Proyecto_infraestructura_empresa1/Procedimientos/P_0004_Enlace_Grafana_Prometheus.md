@@ -20,5 +20,8 @@ Nos conectamos a grafana en nuestro caso con http://192.168.0.50:3000/login
 
 1. Desplegamos el apartado "Connections" y vamos a "Data sources".
 2. Añadimos como Data source "Prometheus"
+3. En Connection ponemos http://prometheus:9090/
+4. Save & test
+
 
 
