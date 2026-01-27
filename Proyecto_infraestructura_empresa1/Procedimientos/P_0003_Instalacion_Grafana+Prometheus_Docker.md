@@ -18,6 +18,7 @@ Este entorno será reproducido con imágenes publicas tanto de grafana como de p
 
 - Acceso al servidor Debian
 - [[P_0002_Instalacion_Docker|Docker instalado en el servidor]]
+- Acceso a internet o a los repositorios oficiales de Docker (para descargar imágenes)
 
 
 ## 3	Procedimiento
@@ -68,3 +69,54 @@ Creamos el fichero docker-compose.yml
 vim docker-compose.yml
 ```
 
+Le pegamos el siguiente contenido
+
+```yml
+version: "3.8"
+
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+    depends_on:
+      - prometheus
+
+volumes:
+  prometheus-data:
+  grafana-data:
+```
+
+Como podemos ver son dockers que se descargan las imagenes oficiales de prometheus y grafana del hub de docker oficial.
+
+Explicación de los parámetros:
+#todo
+
+
+## 4	Arrancar dockers
+
+> [!note]
+> Si es la primera vez que vas a usar docker-compose, es posible que necesites instalar su dependencia. Revisa la incidencia: [[I_0002_docker-compose-up--d-error]]
+
+
+Ejecutamos el siguiente comando para iniciar los dockers. La primera vez va a tener que descargar las imágenes del repositorio oficial de docker.
+
+```sh
+docker-compose up -d
+```
+
+### Verificación de dockers iniciados

@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "P_0003_Instalacion_Grafana+Prometheus_Docker"
             }
+          },
+          {
+            "id": "a5e4d668c5d63ea3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "P_0003_Instalacion_Grafana+Prometheus_Docker"
+            }
           }
         ]
       }
@@ -198,13 +212,14 @@
   },
   "active": "5adaa490b50c22d3",
   "lastOpenFiles": [
-    "2026-01-27.md",
-    "Welcome.md",
+    "Incidencias/I_0002_docker-compose-up--d-error.md",
     "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
+    "Incidencias/I_0001_incidencia_ejemplo.md",
     "Procedimientos/P_0001_Documentar_Incidencia.md",
     "Procedimientos/P_0002_Instalacion_Docker.md",
+    "2026-01-27.md",
+    "Welcome.md",
     "Untitled.md",
-    "Incidencias/I_0001_incidencia_ejemplo.md",
     "Templetes/T.Procedimiento.md",
     "Templetes/T.Incidencia.md",
     "Incidencias",
