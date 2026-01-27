@@ -119,4 +119,34 @@ Ejecutamos el siguiente comando para iniciar los dockers. La primera vez va a te
 docker-compose up -d
 ```
 
-### Verificación de dockers iniciados
+### 4.1	Verificación de dockers iniciados
+
+Para verificar que los docker están arrancados ejecutamos el siguiente comando y deberían aparecer al menos los dos docker que hemos configurado
+
+```sh
+docker ps
+```
+
+```sh
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+50c8480a26c3   grafana/grafana:latest   "/run.sh"                10 minutes ago   Up 10 minutes   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   grafana
+e9f69a6c7a48   prom/prometheus:latest   "/bin/prometheus --c…"   10 minutes ago   Up 10 minutes   0.0.0.0:9090->9090/tcp, :::9090->9090/tcp   prometheus
+
+```
+
+#### 4.1.1	Verificación de fucnionamiento de Grafana
+
+Para verificar que grafana esta funcionando vamos a un navegador web de la red, o que tenga comunicación con nuestro server donde tenemos docker y ponemos la ip(o nombre si lo tenemos por nombre):3000
+
+En mi caso: http://192.168.0.50:3000/login
+
+Deberíamos ver la página de login de grafana
+
+#### 4.1.2	Verificación de funcionamiento de prometheus
+
+
+Para verificar que prometheus esta funcionando vamos a un navegador web de la red, o que tenga comunicación con nuestro server donde tenemos docker y ponemos la ip(o nombre si lo tenemos por nombre):9090
+
+En mi caso: [http://192.168.0.50:3000/login](http://192.168.0.50:9090/query)
+
+Deberíamos ir al panel de Prometheus:
