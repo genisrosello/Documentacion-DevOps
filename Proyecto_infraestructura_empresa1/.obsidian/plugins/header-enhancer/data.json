@@ -16,7 +16,7 @@
   "yamlDefaultStartNumber": "1",
   "yamlDefaultSeparator": ".",
   "globalAutoNumberingEnabled": true,
-  "perDocumentStates": "{\"Incidencias/I_0001_incidencia_ejemplo.md\":true,\"Templetes/T.Incidencia.md\":true,\"Templetes/T.Procedimiento.md\":true,\"Procedimientos/P_0001_Documentar_Incidencia.md\":true}",
+  "perDocumentStates": "{\"Incidencias/I_0001_incidencia_ejemplo.md\":true,\"Templetes/T.Incidencia.md\":true,\"Templetes/T.Procedimiento.md\":true,\"Procedimientos/P_0001_Documentar_Incidencia.md\":true,\"Procedimientos/P_0002_Instalacion_Docker.md\":true}",
   "isSeparateHeaderFont": false,
   "headerFontFamily": "inherit",
   "headerFontSize": "inherit",
