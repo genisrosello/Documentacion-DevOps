@@ -93,4 +93,70 @@ volumes:
 
 ```
 
-Con esto ya tenemos un docker llama
+Con esto ya tenemos un docker llamado node-exporter en el puerto 9100 de nuestro servidor.
+
+### 3.2	Enlace con Prometheus
+
+Ahora hay que configurar el fichero de prometheus para que use las métricas de Node Exporter.
+Para ello editaremos el fichero de configuración de Prometheus. En nuestro caso tenemos ese fichero en el directorio /root/monitoring/prometheus/
+
+Primero hacemos un backup y luego editamos el fichero
+
+```sh
+cd /root/monitoring/prometheus/
+cp prometheus.yml prometheus.yml.20260202
+vim prometheus.yml
+```
+
+Vamos a añadirle el siguiente contenido:
+
+```yml
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+```
+
+Es importante que el target sea el nombre del servicio y no localhost.
+
+El fichero resultante será:
+
+```yml
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+```
+
+### 3.3	Reinicio de servicios
+
+Para que aplique los cambios debemos reiniciar Prometheus, aprovechamos y arrancamos por primera vez Node Export:
+
+```sh
+cd /root/monitoring/
+docker-compose up -d node-export
+docker-compose restart prometheus
+```
+
+#### 3.3.1	Verificación de funcionamiento
+
+Primero comprobamos que Node Export esta funcionando conectándonos a nuestra IP:9100. En mi caso http://192.168.0.50:9100/
+
+Ahora verificamos que podemos enlazar Prometheus con Node Exporter. Vamos a nuestra IP:9090 (portal de prometheus) y vamos a targets. En mi caso http://192.168.0.50:9090/targets
+Allí debe aparecer ahora el target node-exporter (es lo que hemos configurado en [[#3.2 Enlace con Prometheus]])
+
+### 3.4	Dashboard de recursos en Grafana
+
+Pondremos los Dashboards Node Exporter Full.
+Vamos al portal de Grafana conectándonos a nuestra IP:3000. En mi caso http://192.168.0.50:3000/
+Vamos al apartado de dashboard y desplegamos "New". Seleccionamos "import".
+Hemos encontrado los dashboards  Node Exporter Full y tienen el ID 1860, lo insertamos y clicamos en "Load"
+
+Ya debería aparecer los dashboards importados con los recursos del server.
