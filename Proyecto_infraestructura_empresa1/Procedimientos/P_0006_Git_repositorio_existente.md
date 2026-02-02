@@ -1,46 +1,37 @@
-# Crear un git 
-
-> [!attention]
-> El título será con un formato claro y corto. 
-> El formato será  P_XXXX_(nombre_procedimiento) donde se sustituirán las X por el número de procedimiento. El número será secuencial directamente después del número más alto documentado.
-> 
-> Cuando se haya cumplido este requisito, borrar el callout.
-
-
+# Crear un git para un repositorio existente local
 
 ## 1	Descripción del procedimiento
 
-
-> [!attention]
-> Descripción del objetivo que hay que lograr al seguir los pasos del procedimiento.
-> 
-> Cuando se haya cumplido este requisito, borrar el callout.
->
+Crear un git remoto para un repositorio que tenemos local. 
+El objetivo es tener un control de versiones de lo que vamos realizando en nuestro servidor de monitoreo. 
 ### 1.1	tags
 
-> [!attention]
-> Proponer almenos 2 tags para el procidimento. Estos tags deben ser cortos y reutilizables para identificar rápdamente este procedimiento en caso de búsqueda.
->
-
-#tag1
-#tag2
+#git
+#proyecto
+#repositorio
 
 ## 2	Requisitos
 
-> [!attention]
-> Listar los requisitos mínimos esperados para poder desempeñar el procedimiento completo.
-> 
-> Cuando se haya cumplido este requisito, borrar el callout.
->
+- Tener acceso a git
+- Tener git configurado en nuestra máquina
 
 
 ## 3	Procedimiento
 
-> [!important] Importante
-> - Hay que documentar correctamente los pasos a seguir. 
-> - Reutulizar documentación siempre que sea posible.
-> - Eliminar este callout.
+Vamos a crear primero el repositorio remoto. 
+Para ello vamos a nuestro git, vamos a "Repositories" y clicamos en "New". Le damos nombre y descripción, en nuestro caso lo hemos llamado monitoring-dockers.
+Cambiamos la visibilidad de
 
+Ahora en nuestro servidor nos situamos en el directorio que queremos tener en el git:
 
+```sh
+cd /root/monitoring
+git init
+git add .
+git commit -m "Initial commit: add monitoring directory"
+git remote add origin git@github.com:genisrosello/monitoring-dockers.git
+git branch -M main
+git push -u origin main
+```
 
 
