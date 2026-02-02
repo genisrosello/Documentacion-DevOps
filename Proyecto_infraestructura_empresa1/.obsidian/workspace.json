@@ -11,10 +11,14 @@
             "id": "84eae7e26bd8bbc7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Proyecto_infraestructura_empresa1/.obsidian/workspace.json",
+                "bFile": "Proyecto_infraestructura_empresa1/.obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -70,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -192,16 +195,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f2e06c7149748d6c",
+  "active": "84eae7e26bd8bbc7",
   "lastOpenFiles": [
-    "Procedimientos/P_0006_Git_repositorio_existente.md",
     "Procedimientos/P_0005_Instalacion_Node_Exporter.md",
+    "Incidencias/I_0002_docker-compose-up--d-error.md",
+    "Procedimientos/P_0006_Git_repositorio_existente.md",
     "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
     "Incidencias/I_0001_incidencia_ejemplo.md",
     "Procedimientos/P_0002_Instalacion_Docker.md",
     "Procedimientos/P_0001_Documentar_Incidencia.md",
     "Procedimientos/P_0004_Enlace_Grafana_Prometheus.md",
-    "Incidencias/I_0002_docker-compose-up--d-error.md",
     "2026-01-27.md",
     "Welcome.md",
     "Untitled.md",
