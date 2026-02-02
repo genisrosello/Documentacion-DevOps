@@ -20,7 +20,7 @@ El objetivo es tener un control de versiones de lo que vamos realizando en nuest
 
 Vamos a crear primero el repositorio remoto. 
 Para ello vamos a nuestro git, vamos a "Repositories" y clicamos en "New". Le damos nombre y descripción, en nuestro caso lo hemos llamado monitoring-dockers.
-Cambiamos la visibilidad de
+Cambiamos la visibilidad del proyecto a privado.
 
 Ahora en nuestro servidor nos situamos en el directorio que queremos tener en el git:
 

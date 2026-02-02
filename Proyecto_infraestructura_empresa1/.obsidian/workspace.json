@@ -11,14 +11,10 @@
             "id": "84eae7e26bd8bbc7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Procedimientos/P_0006_Git_repositorio_existente.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "P_0006_Git_repositorio_existente"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#grafana",
+                "query": "tag:",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -195,10 +192,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "84eae7e26bd8bbc7",
+  "active": "f2e06c7149748d6c",
   "lastOpenFiles": [
-    "Procedimientos/P_0005_Instalacion_Node_Exporter.md",
     "Procedimientos/P_0006_Git_repositorio_existente.md",
+    "Procedimientos/P_0005_Instalacion_Node_Exporter.md",
     "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
     "Incidencias/I_0001_incidencia_ejemplo.md",
     "Procedimientos/P_0002_Instalacion_Docker.md",
