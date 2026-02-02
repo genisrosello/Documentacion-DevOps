@@ -147,6 +147,6 @@ Deberíamos ver la página de login de grafana
 
 Para verificar que prometheus esta funcionando vamos a un navegador web de la red, o que tenga comunicación con nuestro server donde tenemos docker y ponemos la ip(o nombre si lo tenemos por nombre):9090
 
-En mi caso: [http://192.168.0.50:3000/login](http://192.168.0.50:9090/query)
+En mi caso: [http://192.168.0.50:9090/login](http://192.168.0.50:9090/query)
 
 Deberíamos ir al panel de Prometheus:
