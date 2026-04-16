@@ -34,7 +34,7 @@ Requiere reinicio
 reboot
 ```
 
-hay que hacer ollama run llama3 y ya se puede "hablar con la IA"
+Hay que hacer ollama run llama3 y ya se puede "hablar con la IA"
 
 ```bash
 ollama run llama3
