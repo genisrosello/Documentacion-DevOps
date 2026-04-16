@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Procedimientos/P_0007_Instalación_Ollama.md",
+                "file": "Procedimientos/P_0007_Instalación_IA_Ollama.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "P_0007_Instalación_Ollama"
+              "title": "P_0007_Instalación_IA_Ollama"
             }
           },
           {
@@ -227,7 +227,7 @@
   "active": "57a515683b9369c6",
   "lastOpenFiles": [
     "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
-    "Procedimientos/P_0007_Instalación_Ollama.md",
+    "Procedimientos/P_0007_Instalación_IA_Ollama.md",
     "Procedimientos/P_0004_Enlace_Grafana_Prometheus.md",
     "Procedimientos/P_0005_Instalacion_Node_Exporter.md",
     "Procedimientos/P_0006_Git_repositorio_existente.md",
