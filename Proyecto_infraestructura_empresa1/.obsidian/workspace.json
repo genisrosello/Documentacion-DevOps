@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Procedimientos/P_0004_Enlace_Grafana_Prometheus.md",
+                "file": "Procedimientos/P_0003_Instalacion_Grafana+Prometheus_Docker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "P_0004_Enlace_Grafana_Prometheus"
+              "title": "P_0003_Instalacion_Grafana+Prometheus_Docker"
             }
           }
         ]
@@ -197,8 +197,8 @@
   },
   "active": "84eae7e26bd8bbc7",
   "lastOpenFiles": [
-    "Procedimientos/P_0005_Instalacion_Node_Exporter.md",
     "Procedimientos/P_0004_Enlace_Grafana_Prometheus.md",
+    "Procedimientos/P_0005_Instalacion_Node_Exporter.md",
     "Procedimientos/P_0006_Git_repositorio_existente.md",
     "Incidencias/I_0001_incidencia_ejemplo.md",
     "Procedimientos/P_0001_Documentar_Incidencia.md",
