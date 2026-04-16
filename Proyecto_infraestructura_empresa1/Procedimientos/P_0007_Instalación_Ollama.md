@@ -1,12 +1,4 @@
-# Título del procedimiento (editar)
-
-> [!attention]
-> El título será con un formato claro y corto. 
-> El formato será  P_XXXX_(nombre_procedimiento) donde se sustituirán las X por el número de procedimiento. El número será secuencial directamente después del número más alto documentado.
-> 
-> Cuando se haya cumplido este requisito, borrar el callout.
-
-
+# Instalación de Ollama, Agente IA en nuestro Debian.
 
 ## 1	Descripción del procedimiento
 
@@ -48,3 +40,4 @@ curl -fsSL https://ollama.com/install.sh | sh
 (15:34 - 15:40)
 Puede tardar varios minutos
 Requiere reinicio
+Despues de reiniciar (reboot) solo hay que hacer ollama run llama3 y ya se puede "hablar con la IA"
